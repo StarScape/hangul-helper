@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Korean';
+  src: url('./media/fonts/Korean.ttf');
+}
+
+@font-face {
+  font-family: 'UnGungseo';
+  src: url('./media/fonts/UnGungseo.ttf');
+}
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url('./media/fonts/Nexa Light.otf');
+}
+
+body {
+  background-color: #2a9fb9;
+  color: rgb(240, 240, 240);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+#main-container {
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+  /*font-weight: bold;*/
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #2D3E50;
+  box-shadow: 0 0.5px 10px rgba(0, 0, 0, 0.4);
+  /*text-align: left;*/
+  padding-top: 5px;
+  padding-bottom: 12px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#helper {
+  font-family: 'Nexa Light';
+  font-size: 50px;
+}
+
+#hangul {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#header-subtext {
+  font-size: 15px;
+  margin-left: 10px;
+
+}
+
+#content-container {
+  /*padding: 10px;*/
+  padding-bottom: 70px;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.heading h2 {
+  margin-top: 10px;
+  font-size: 12px;
+  /*font-family: helvetica;*/
+  /*text-shadow: none;*/
+}
+
+.letter {
+  display: inline-block;
+  margin-left:  20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  
+  font-size: 40px;
+}
+
+.korean-letter {
+  position: relative;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.letter-name {
+  font-size: 13px;
+  padding-bottom: 12px;
+}
+
+.latin {
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.play-button {
+  display: none;
+
+  margin: 0 auto;
+  top: 25%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 12px;
+  border-color: transparent transparent transparent rgb(240, 240, 240);
+  cursor: hand;
+}
+
+.caret {
+  margin-top: 20px;
+  cursor: hand;
+}
+
+.caret img {
+  width: 20px;
+}
+
+footer {
+  text-align: center;
+  text-align: left;
+  font-size: 10px;
+  background-color: #2b2c31;
+  box-shadow: inset 0 0.5px 10px rgba(0, 0, 0, 0.4);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 70px;
+  color: grey;
+
+  /* Ni puta idea porque, but this makes footer work on iOS*/
+  position: absolute;
+  bottom: 0;
+}
+
+#share-buttons {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  /*float: left;*/
+  /*display: inline-block;*/
+}
+
+.circle {
+  background-color: #2fa06c;
+  border-radius: 50%;
+  text-align: center;
+  
+  height: 16px;
+  display: inline-block;
+  padding: 5px 5px 10px 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.circle img {
+  width: 20px;
+  height: 20px;
+}
+
+#footer-text {
+  display: inline-block;
+  /*float: left;*/
+  /*text-align: center;*/
+}

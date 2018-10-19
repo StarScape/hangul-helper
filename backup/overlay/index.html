@@ -1,0 +1,543 @@
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>Hangul Helper</title>
+
+  <link rel="shortcut icon" type="image/png" href="public/favicon.png"/>
+
+  <link rel="stylesheet" type="text/css" href="public/reset.css">
+  <link rel="stylesheet" type="text/css" href="public/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+  <script src='public/jquery-3.1.0.min.js'></script>
+  <script src='public/index.js'></script>
+
+</head>
+<body>
+
+<div id='main-container'>
+  <header>
+
+    <span id='hangul'>한글  </span>
+    <span id='helper'>HELPER</span>
+    <div id='header-subtext'>easy hangul reference</div>
+
+  </header>
+
+  <div id='content-container'>
+
+    <h1 class='heading'>CONSONANTS</h1>
+    <ul class="letter-list">
+      <li>
+        <div class='korean-letter'>ㄱ <div class='overlay'>!</div></div>
+        <div class='letter-name'>기역</div>
+        <div class='latin'>k</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/k.wav" />  
+          </audio> 
+        </div>
+
+      </li>
+
+     <li>
+        <div class='korean-letter'>ㄲ</div>
+        <div class='letter-name'>쌍기역</div>
+        <div class='latin'>kk</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/kk.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㄴ</div>
+        <div class='letter-name'>니은</div>
+        <div class='latin'>n</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/n.wav" />
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㄷ</div>
+        <div class='letter-name'>디귿</div>
+        <div class='latin'>d</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/d.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㄸ</div>
+        <div class='letter-name'>쌍디귿</div>
+        <div class='latin'>dd</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/dd.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㄹ</div>
+        <div class='letter-name'>리을</div>
+        <div class='latin'>r</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/r.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅁ</div>
+        <div class='letter-name'>미음</div>
+        <div class='latin'>m</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/m.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅂ</div>
+        <div class='letter-name'>비읍</div>
+        <div class='latin'>b</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/b.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅃ</div>
+        <div class='letter-name'>쌍비읍</div>
+        <div class='latin'>bb</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/bb.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅅ</div>
+        <div class='letter-name'>시옷</div>
+        <div class='latin'>s</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/s.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅆ</div>
+        <div class='letter-name'>쌍시옷</div>
+        <div class='latin'>ss</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/ss.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅇ</div>
+        <div class='letter-name'>이응</div>
+        <div class='latin'>∅ / ng</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/ng_and_crickets.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅈ</div>
+        <div class='letter-name'>지읒</div>
+        <div class='latin'>j</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/j.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅉ</div>
+        <div class='letter-name'>쌍지읒</div>
+        <div class='latin'>jj</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/jj.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅊ</div>
+        <div class='letter-name'>치읓</div>
+        <div class='latin'>ch</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/ch.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅋ</div>
+        <div class='letter-name'>키읔</div>
+        <div class='latin'>k</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/kh.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅌ</div>
+        <div class='letter-name'>티읕</div>
+        <div class='latin'>t</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/t.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅍ</div>
+        <div class='letter-name'>피읖</div>
+        <div class='latin'>p</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/p.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅎ</div>
+        <div class='letter-name'>히읗</div>
+        <div class='latin'>h</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/h.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+    </ul>
+
+    <h1 class='heading'>VOWELS</h1>
+    <ul class="letter-list">
+      <li>
+        <div class='korean-letter'>ㅏ</div>
+        <div class='letter-name'>아</div>
+        <div class='latin'>a</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/a.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅐ</div>
+        <div class='letter-name'>애</div>
+        <div class='latin'>ae</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/ae.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅑ</div>
+        <div class='letter-name'>야</div>
+        <div class='latin'>ya</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/ya.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅒ</div>
+        <div class='letter-name'>얘</div>
+        <div class='latin'>yae</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/yae.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅓ</div>
+        <div class='letter-name'>어</div>
+        <div class='latin'>eo</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/eo.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅔ</div>
+        <div class='letter-name'>에</div>
+        <div class='latin'>e</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/e.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅕ</div>
+        <div class='letter-name'>여</div>
+        <div class='latin'>yeo</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/yeo.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅖ</div>
+        <div class='letter-name'>예</div>
+        <div class='latin'>ye</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/ye.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅗ</div>
+        <div class='letter-name'>오</div>
+        <div class='latin'>o</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/o.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅘ</div>
+        <div class='letter-name'>와</div>
+        <div class='latin'>wa</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/wa.wav" />  
+          </audio> 
+        </div>
+      </li>
+      
+      <li>
+        <div class='korean-letter'>ㅙ</div>
+        <div class='letter-name'>왜</div>
+        <div class='latin'>wae</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/wae.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅚ</div>
+        <div class='letter-name'>외</div>
+        <div class='latin'>oe</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/oe.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅛ</div>
+        <div class='letter-name'>요</div>
+        <div class='latin'>yo</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/yo.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅜ</div>
+        <div class='letter-name'>우</div>
+        <div class='latin'>u</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/u.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅝ</div>
+        <div class='letter-name'>워</div>
+        <div class='latin'>wo</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/wo.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅞ</div>
+        <div class='letter-name'>웨</div>
+        <div class='latin'>we</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/we.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅟ</div>
+        <div class='letter-name'>위</div>
+        <div class='latin'>wi</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/wi.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅠ</div>
+        <div class='letter-name'>유</div>
+        <div class='latin'>yu</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/yu.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅡ</div>
+        <div class='letter-name'>으</div>
+        <div class='latin'>eu</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/eu.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅢ</div>
+        <div class='letter-name'>의</div>
+        <div class='latin'>ui</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/alt_vowels/ui.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+      <li>
+        <div class='korean-letter'>ㅣ</div>
+        <div class='letter-name'>이</div>
+        <div class='latin'>i</div>
+
+        <div class='play-button' onclick='playAudio(this)'>
+          <audio class='letter-audio'>
+           <source src="public/media/audio/i.wav" />  
+          </audio> 
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <footer>
+    <div id='share-buttons'>
+      <div>Sharing is caring:</div>
+      <a class='circle hvr-shrink' href="https://www.facebook.com/sharer/sharer.php?u=hangul-helper.com" target="_blank">
+        <img src="public/media/icons/facebook.png">
+      </a>
+      <a class='circle hvr-shrink' href="http://twitter.com/share?text=Today I discovered:&url=http://hangul-helper.com">
+        <img src="public/media/icons/twitter.png">
+      </a>
+      <a class='circle hvr-shrink' href="http://pinterest.com/pin/create/button/?url={http://hangul-helper.com}" class="pin-it-button">
+        <img src="public/media/icons/pinterest.gif">      
+      </a>
+
+      <div>&copy; Very Official Looking Footers, Inc.</div>
+    </footer>
+
+</div>
+
+</body>
+</html>

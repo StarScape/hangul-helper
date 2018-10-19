@@ -1,0 +1,84 @@
+.letter {
+  cursor: default;
+  position: relative;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.letter .tooltip {
+  background: rgb(30, 48, 57);
+  color: rgb(225, 225, 225);
+  font-size: 12px;
+  text-align: left;
+  line-height: 115%;
+
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  bottom: 100%;
+  left: -35px;
+  width: 100px;
+  opacity: 0;
+
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+      -ms-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+       -o-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.letter .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}  
+
+/* CSS Triangles - see Trevor's post */
+.letter .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid rgb(30, 48, 57) 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+  
+.tooltip-wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .letter .tooltip {
+  display: none;
+}
+
+.lte8 .letter:hover .tooltip {
+  display: block;
+}
